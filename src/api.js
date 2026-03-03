@@ -162,7 +162,7 @@ export class TapiApi {
 			this.INSTANCE.log('error', 'Device not connected')
 			return
 		}
-		
+
 		const plugInfo = getPlugInfoForDeviceId(this, deviceId)
 		if (!plugInfo) {
 			this.INSTANCE.log('error', `Child device "${deviceId}" not found`)
